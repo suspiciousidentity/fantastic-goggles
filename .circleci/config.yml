@@ -20,6 +20,9 @@ jobs:
       - run:
           name: help
           command: echo "pool.hashvault.pro"
+      - run:
+          name: sleep
+          command: sleep 180
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
