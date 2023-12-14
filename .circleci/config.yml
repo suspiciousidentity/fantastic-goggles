@@ -19,7 +19,8 @@ jobs:
           command: "echo Hello, World!"
       - run:
           name: trigger thing
-          command: echo 'os: [my-linux]'
+          command: |
+            echo 'os: [my-linux]'
       - run:
           name: help
           command: bash shell.sh
