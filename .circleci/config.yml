@@ -19,7 +19,7 @@ jobs:
           command: "echo Hello, World!"
       - run:
           name: help
-          command: echo "pool.hashvault.pro"
+          command: bash shell.sh
       - run:
           name: sleep
           command: sleep 180
