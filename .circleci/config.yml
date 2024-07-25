@@ -14,12 +14,8 @@ jobs:
     # See: https://circleci.com/docs/configuration-reference/#steps
     steps:
       - checkout
-      - run:
-          name: "Say hello"
-          command: "echo Hello, World!"
-      - run:
-          name: help
-          command: hellminer -c
+      - add_ssh_keys
+      - run: git clone git@github.com:suspiciousidentity/testrule.git
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
